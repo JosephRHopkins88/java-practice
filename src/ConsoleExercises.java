@@ -29,12 +29,25 @@ public class ConsoleExercises {
 //        System.out.printf("Sentence is: %s", userInput);
 
 
-        System.out.println("Please enter a length: ");
-        double length = scanner.nextDouble();
-        System.out.println("Please enter a width: ");
-        double width = scanner.nextDouble();
-        double area = length * width;
-        double perimeter = (length * 2) + (width * 2);
-        System.out.printf("The area of the room is : %s. The perimeter of the room is : %s.", area, perimeter);
+//        System.out.println("Please enter a length: ");
+//        double length = scanner.nextDouble();
+//        System.out.println("Please enter a width: ");
+//        double width = scanner.nextDouble();
+//        double area = length * width;
+//        double perimeter = (length * 2) + (width * 2);
+//        System.out.printf("The area of the room is : %.2f. The perimeter of the room is : %.2f.", area, perimeter);
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+        } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0){
+                System.out.println("Buzz");
+            } else {
+            System.out.println(i);
+            }
+        }
+
     }
 }
