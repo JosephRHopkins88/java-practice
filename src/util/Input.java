@@ -16,7 +16,7 @@ public class Input {
         return scanner.nextLine();
     }
     public static boolean yesNo() {
-        System.out.println("Yes or No y/n");
+        System.out.println("Yes or No (y/n)");
         String userInput = scanner.next();
         if (userInput.equalsIgnoreCase("yes" ) || userInput.equalsIgnoreCase("y")) {
             return true;
@@ -40,7 +40,7 @@ public class Input {
     public static double getDouble(double min, double max) {
         double numberGiven;
         do {
-            System.out.printf("Please enter a double number between %f and %f", min, max);
+            System.out.printf("Please enter a number between %.02f and %.02f \n", min, max);
             numberGiven = scanner.nextDouble();
 
         } while(numberGiven < min || numberGiven > max);
