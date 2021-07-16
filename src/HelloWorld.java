@@ -168,17 +168,17 @@ public class HelloWorld {
 //                choiceToContinue = scanner.next();
 //            } while (choiceToContinue.equalsIgnoreCase("y"));
 
-//        for (int i = 0; i <= 100; i++) {
-//            if (i % 3 == 0 && i % 5 == 0) {
-//                System.out.println("FizzBuzz");
-//            } else if (i % 3 == 0) {
-//                System.out.println("Fizz");
-//            } else if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//            } else {
-//                System.out.println(i);
-//            }
-//        }
+        for (int i = 15; i >= 1; i--) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
 
 //        Scanner scanner = new Scanner(System.in);
 //        String responseYN = "n";
@@ -207,35 +207,35 @@ public class HelloWorld {
 //
 //        } while (responseYN.equalsIgnoreCase("y"));
 
-        gradeTwo();
+//        gradeTwo();
     }
 // recursion loop
-static Scanner scanner = new Scanner(System.in);
-    public static void gradeTwo () {
-
-        System.out.println("Please enter a numerical grade: ");
-        int response = scanner.nextInt();
-        char grade = ' ';
-        if (response >= 88 && response <= 100) {
-            grade = 'A';
-        } else
-        if (response >= 80 && response <= 87) {
-            grade = 'B';
-        } else
-        if (response >= 67 && response <= 79) {
-            grade = 'C';
-        } else
-        if (response >= 60 && response <= 66) {
-            grade = 'D';
-        } else
-        if (response >= 0 && response <= 59) {
-            grade = 'F';
-        }
-        System.out.printf("You received: %c \n", grade);
-        System.out.println("Would you like to enter another grade? y/n");
-        String responseYN = scanner.next();
-        if (responseYN.equalsIgnoreCase("y")) {
-            gradeTwo();
-        }
-    }
+//static Scanner scanner = new Scanner(System.in);
+//    public static void gradeTwo () {
+//
+//        System.out.println("Please enter a numerical grade: ");
+//        int response = scanner.nextInt();
+//        char grade = ' ';
+//        if (response >= 88 && response <= 100) {
+//            grade = 'A';
+//        } else
+//        if (response >= 80 && response <= 87) {
+//            grade = 'B';
+//        } else
+//        if (response >= 67 && response <= 79) {
+//            grade = 'C';
+//        } else
+//        if (response >= 60 && response <= 66) {
+//            grade = 'D';
+//        } else
+//        if (response >= 0 && response <= 59) {
+//            grade = 'F';
+//        }
+//        System.out.printf("You received: %c \n", grade);
+//        System.out.println("Would you like to enter another grade? y/n");
+//        String responseYN = scanner.next();
+//        if (responseYN.equalsIgnoreCase("y")) {
+//            gradeTwo();
+//        }
+//    }
 }
