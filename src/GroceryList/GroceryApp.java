@@ -15,7 +15,7 @@ public class GroceryApp {
 
     public static void main(String[] args) {
 
-   //call addItem method to prompt user to see if they want to add an item
+   //call addItem method to prompt user to see if they want to add an item.
 
 addItem();
 
